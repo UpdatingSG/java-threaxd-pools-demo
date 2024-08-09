@@ -17,6 +17,8 @@ public class MergerSorter implements Callable<List<Integer>> {
 
     @Override
     public List<Integer> call() throws Exception {
+        // System.out.println("Thread " + Thread.currentThread().getName() + " is sorting: " + listToSort);
+        
         int n = listToSort.size();
 
         if (n <= 1) {
